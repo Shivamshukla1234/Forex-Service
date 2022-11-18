@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class ForexServiceApplicationTests {
     public static Logger logger = LoggerFactory.getLogger(ForexServiceApplicationTests.class);
     @Test
-    public void contextLoads(){
+    public  contextLoads(){
         logger.info("Test case executing ....");
         assertEquals(true,true);
     }
