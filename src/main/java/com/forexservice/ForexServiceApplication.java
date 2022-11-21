@@ -6,10 +6,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.PostConstruct;
 import org.slf4j.Logger;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-
+@RestController
 public class ForexServiceApplication {
+     @GetMapping("/message")
+	public String getMessage(){
+		return "Welcome to Forex-Service..";
+	}
+
  public static  Logger logger =LoggerFactory.getLogger(ForexServiceApplication.class);
  @PostConstruct
  public void initt(){
